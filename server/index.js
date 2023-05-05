@@ -1,6 +1,9 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-const PORT = 3001
+const PORT = 3001;
+// Cors allows two processes on different ports to communicate and share resources
+const cors = require('cors');
+app.use(cors());
 
 
 app.get('/name', (req, res) => {
@@ -9,6 +12,7 @@ app.get('/name', (req, res) => {
 
     randomName = names[Math.floor(Math.random() * names.length)];
     res.json({ name: randomName });
+    console.log('Response name sent!')
 });
 
 
