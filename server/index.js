@@ -8,11 +8,17 @@ app.use(cors());
 
 app.get('/name', (req, res) => {
     const names = ['Daenerys', 'Brian', 'Deshawn', 'Anastasia', 'Ali', 
-                    'Evelyn', 'Achilles', 'Priyanka', 'Phyllis', 'Mateo'];
+                    'Evelyn', 'Achilles', 'Priyanka', 'Phyllis', 'Mateo',
+                    'Asher', 'Theodore', 'Oliver', 'Aurora', 'Violet',
+                    'Charlotte', 'Rowan', 'Willow', 'Avery', 'Grace',
+                    'Fonz', 'Jose', 'Liam', 'Gerald', 'Jasper', 'Luna',
+                    'Rory', 'Orion', 'Atticus', 'River', 'Quinn', 'Maeve',
+                    'Silas', 'Hazel', 'Holly', 'Ezra', 'Harlow', 'Francisco',
+                    'Darcy', 'Rainn', 'Norah', 'Ophelia', 'Teanna', 'Eleanor'];
 
     randomName = names[Math.floor(Math.random() * names.length)];
     res.json({ name: randomName });
-    console.log('Response name sent!')
+    console.log('Response sent! Name: ' + randomName)
 });
 
 
