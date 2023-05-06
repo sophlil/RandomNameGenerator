@@ -36,3 +36,7 @@ getName();
   The data will be sent as a JSON object i.e. { name: 'Mateo' }. The name string can be accessed using 
   `{data.name}`.
 
+  ## UML Sequence Diagram
+
+  ![image info](/GenerateRandomName%20Microservice%20UML.png)
+
